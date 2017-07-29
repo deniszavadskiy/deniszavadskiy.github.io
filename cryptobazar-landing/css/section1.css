@@ -1,0 +1,45 @@
+#section1 {
+  background: #000 url("../media/images/section1/spinner-white.gif") no-repeat center center;
+  text-align: center;
+}
+#section1 .logo {
+  display: none;
+}
+#section1 .video-bg {
+  position: absolute;
+  width: 100%;
+}
+#section1 .video-bg video {
+  width: 100%;
+}
+#section1 .content-wrapper {
+  padding: 11.5em 0.5em 0 0.5em;
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+}
+#section1 .content-wrapper h1.header {
+  font-size: 5.1em;
+  line-height: 90px;
+  font-weight: 400;
+}
+#section1 .content-wrapper h1.header .big-text {
+  font-weight: 600;
+}
+#section1 .content-wrapper .description {
+  font-size: 1.67em;
+  margin: 1.8em auto 0 auto;
+}
+#section1 .property-wrapper {
+  display: none;
+  background: #1a1b1c;
+  width: 100%;
+  padding: 3em 1.5em;
+  margin-top: 5em;
+}
+#section1 .property-wrapper .properties {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

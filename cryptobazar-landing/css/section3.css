@@ -1,0 +1,60 @@
+#section3 {
+  background-color: #1a1b1c;
+  padding: 3em 0 3em;
+}
+#section3 .caption {
+  color: #7c7c7c;
+  font-size: 1.12em;
+  font-weight: 100;
+  text-align: center;
+}
+#section3 .info-blocks-container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+#section3 .info-blocks-container .info-block {
+  max-width: 220px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+  font-size: 24px;
+  color: #fff;
+  margin: 3em auto 0;
+}
+#section3 .info-blocks-container .info-block .info-block-heading {
+  color: #6793bd;
+  font-weight: 500;
+  font-size: 32px;
+}
+#section3 .info-blocks-container .info-block .line {
+  height: 3px;
+  width: 100%;
+  margin: 20px 0 18px;
+  background-color: #535e69;
+}
+#section3 .more-button {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0.8em 0;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 3em auto 1em;
+  background-color: #6793bd;
+  text-align: center;
+}
+#section3 .more-button:hover {
+  background-color: #eb8909;
+}

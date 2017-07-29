@@ -1,0 +1,106 @@
+@import colors
+
+#section-header
+	position fixed
+	display -webkit-box
+	display -ms-flexbox
+	display flex
+	-webkit-box-align center
+	-ms-flex-align center
+	align-items center
+	z-index 5
+	min-height 99px
+	background rgba(0,0,0,0)
+	color white
+	text-align right
+	line-height 98px
+	-webkit-transition 0.4s ease
+	-o-transition 0.4s ease
+	transition 0.4s ease
+	-webkit-transition-property background-color, -webkit-box-shadow
+	transition-property background-color, -webkit-box-shadow
+	-o-transition-property background-color, box-shadow
+	transition-property background-color, box-shadow
+	transition-property background-color, box-shadow, -webkit-box-shadow
+	width 100%
+	background transparent
+	&.active
+		background $color_brand_white
+		-webkit-box-shadow rgba(0, 0, 0, 0.13) 0px 4px 16px 0px
+		box-shadow rgba(0, 0, 0, 0.13) 0px 4px 16px 0px
+		nav.top-menu
+			.menu-list
+				li
+					a
+						color $color_brand_black
+						&.active
+							font-weight 300
+							font-size 1em
+	.content-wrapper
+		padding 0 0.5em
+		display -webkit-box
+		display -ms-flexbox
+		display flex
+		-webkit-box-pack justify
+		-ms-flex-pack justify
+		justify-content space-between
+		.logo
+			width 7em
+			height 3em
+			background url("../media/images/logo.svg") center no-repeat
+			background-size contain
+			cursor pointer
+		.open-menu-button
+			width 48px
+			height 42px
+			margin 50px auto
+			cursor pointer
+			display none
+			background $color_brand_light_grey
+			position absolute
+			right 24px
+			top 18px
+			border none
+			otline none
+			span
+				display block
+				position absolute
+				height 2px
+				width 56%
+				background #292929
+				border-radius 9px
+				opacity 1
+				left 23%
+				&:nth-child(1)
+					top 12px
+				&:nth-child(2)
+					top 20px
+				&:nth-child(3)
+					top 28px
+		.top-menu
+			.menu-list
+				display flex
+				-webkit-box-pack justify
+				-ms-flex-pack justify
+				justify-content space-between
+				width 80%
+				min-width 66em
+				height 4em
+				-webkit-box-align center
+				-ms-flex-align center
+				align-items center
+				text-transform uppercase
+				font-family Roboto
+				font-weight 600
+				font-size 0.9em
+				li
+					a
+						color $color_brand_white
+						-webkit-transition 0.5s 0s ease
+						-o-transition 0.5s 0s ease
+						transition 0.5s 0s ease
+						&:hover
+							color $color_brand_grey
+							cursor pointer
+
+
