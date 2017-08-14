@@ -30,6 +30,8 @@ Vue.component('camera-detection', {
             this.getXYCoordinates(event);
         },
         onTouchMove(event) {
+            event.preventDefault();
+            event.stopPropagation();
             this.getXYCoordinates(event.touches[0]);
         },
         getXYCoordinates(event) {
