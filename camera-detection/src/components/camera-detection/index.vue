@@ -1,8 +1,7 @@
 <template>
     <div class="camera-detection-wrapper">
-        <div ref="cameras" class="camera-detection" :style="style" @mousemove="onMouseMove"
-             @touchstart="onTouchMove"></div>
-        <div class="points" v-for="point in pointsStyle" :style="point" @touchstart.stop.prevent="touchStart"
+        <div ref="cameras" class="camera-detection" :style="style" @touchstart.stop.prevent="onDoubleClick" @mousemove="onMouseMove"></div>
+        <div class="points" v-for="point in pointsStyle" :style="point" @touchstart.stop.prevent="onDoubleClick($event, true)"
              @mouseover="onMouseOverPoint"></div>
     </div>
 </template>
@@ -17,13 +16,10 @@
                 touchCount: 0,
                 style: {
                     background: `
-                radial-gradient(ellipse at center, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(84,8,0,1) 0%, rgba(176,15,0,1) 0%, rgba(176,15,0,1) 48%, rgba(176,15,0,0) 68%) no-repeat,
+                url(./src/assets/indicator.png) no-repeat,
                 url(${this.src}) center no-repeat`,
-                    backgroundSize: "300px 300px, 100% 100%",
                     backgroundPosition: "100px 100px, сenter center",
-                    backgroundBlendMode: "difference",
-                    width: "100vw",
-                    height: "100%"
+                    backgroundSize: "300px 300px, 100% 100%",
                 }
             }
         },
@@ -50,13 +46,15 @@
             }
         },
         methods: {
-            touchStart(event) {
-                this.getXYCoordinates(event.touches[0]);
+            onDoubleClick(event, isPoint) {
                 ++this.touchCount;
 
                 if (this.touchCount >= 2) {
-                    console.log(event);
-                    event.target.classList.add('highlight');
+                    this.getXYCoordinates(event.touches[0]);
+
+                    if(isPoint) {
+                        event.target.classList.add('highlight');
+                    }
                 }
 
                 setTimeout(() => {
@@ -64,16 +62,10 @@
                 }, 500)
             },
             onMouseOverPoint(event) {
-                console.log('mouseOver');
                 event.target.classList.add('highlight');
             },
             onMouseMove(event) {
                 this.getXYCoordinates(event);
-            },
-            onTouchMove(event) {
-                event.preventDefault();
-                event.stopPropagation();
-                this.getXYCoordinates(event.touches[0]);
             },
             getXYCoordinates(event) {
                 this.x = event.clientX - 150;
@@ -87,6 +79,11 @@
 
 <style>
     .camera-detection-wrapper {
+        height: 100%;
+    }
+    .camera-detection{
+        background-blend-mode: difference;
+        width: 100vw;
         height: 100%;
     }
     .points {
