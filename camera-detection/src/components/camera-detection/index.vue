@@ -90,18 +90,35 @@
         height: 100%;
     }
     .points {
-        width: 10px;
-        height: 10px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
-        background-color: red;
+        background-color: darkblue;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0.3;
         position: absolute;
     }
 
     .points.highlight {
-        background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, rgba(231, 55, 39, 0.79) 79%, rgba(231, 55, 39, 1) 100%);
+        background: rgba(255,255,255,0);
+        background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(231,55,39,0.79) 79%, rgba(231,55,39,1) 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,0)), color-stop(1%, rgba(255,255,255,0.01)), color-stop(79%, rgba(231,55,39,0.79)), color-stop(100%, rgba(231,55,39,1)));
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(231,55,39,0.79) 79%, rgba(231,55,39,1) 100%);
+        background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(231,55,39,0.79) 79%, rgba(231,55,39,1) 100%);
+        background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(231,55,39,0.79) 79%, rgba(231,55,39,1) 100%);
+        background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(231,55,39,0.79) 79%, rgba(231,55,39,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e73727', GradientType=1 );
         width: 200px;
         height: 200px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         transition: background-color 0.2s;
+        -webkit-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        opacity: 1;
     }
 </style>

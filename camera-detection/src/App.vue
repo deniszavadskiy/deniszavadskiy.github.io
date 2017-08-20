@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <camera-detection src="./src/assets/test-image.jpg" :coordinates="[[39, 47.7]]"></camera-detection>
+        <camera-detection src="./src/assets/test-image.jpg" :coordinates="[[39, 48]]"></camera-detection>
     </div>
 </template>
 
