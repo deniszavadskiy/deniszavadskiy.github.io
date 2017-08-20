@@ -23,7 +23,7 @@
                     backgroundPosition: "100px 100px, сenter center",
                     backgroundBlendMode: "difference",
                     width: "100vw",
-                    height: "100vh"
+                    height: "100%"
                 }
             }
         },
@@ -86,6 +86,9 @@
 </script>
 
 <style>
+    .camera-detection-wrapper {
+        height: 100%;
+    }
     .points {
         width: 10px;
         height: 10px;
