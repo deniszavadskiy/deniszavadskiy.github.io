@@ -49,7 +49,6 @@ function onScroll(){
 			height = $("#sectionHeader").height();;
 		if (hash[0] == "#") {
 			var target = $(hash);
-			console.log(target.outerHeight());
 			if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top ) {
 				$(menu_selector + " a.active").removeClass("active");
 				$(this).addClass("active");
