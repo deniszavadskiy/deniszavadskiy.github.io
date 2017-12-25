@@ -14,8 +14,9 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="assets/images/beidge.png"/>
     <link rel="stylesheet" href="styles/all.min.css">
-    <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.11.1.min.js" defer></script>
+    <script type="text/javascript" src="scripts/script.js" defer></script>
+    <script type="text/javascript" src="scripts/browser-detect.js" defer></script>
 </head>
 
 
@@ -64,6 +65,9 @@
                     <li>
                         <a href="#contacts">Контакти</a>
                     </li>
+                    <li>
+                        <a href="#partners">Партнери</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -98,12 +102,15 @@
                 <li>
                     <a href="#contacts">Контакти</a>
                 </li>
+                <li>
+                    <a href="#partners">Партнери</a>
+                </li>
             </ul>
         </nav>
     </div>
 </header>
 
-<section id="home">
+<section id="home" class="with-parallax">
     <div class="content-wrapper">
         <h1>УКРЕНЕРГОХОЛДИНГ</h1>
         <p>Дозвольте сонцю заробляти для Вас!</p>
@@ -207,22 +214,22 @@
             <div class="advantage-item">
                 <h5>Унікальна методика, розроблена банком у співпраці з Міжнародною фінансовою корпорацією (IFC)</h5>
                 <p class="subheader">допомагає реалістично оцінити очікувані результати на етапі попереднього розгляду. Це дозволяє за потреби коригувати проект для досягнення оптимальних показників окупності та економії енергозатрат</p>
-                <img class="advantage-icon" src="assets/images/methodic-icon.png" alt="method" class="ьуерщв-icon">
+                <img class="advantage-icon" src="assets/images/methodic-icon.png" alt="method" class="methodic-icon">
             </div>
 
             <div class="advantage-item">
                 <h5>Проста й швидка процедура оформлення кредиту</h5>
-                <img class="advantage-icon" src="assets/images/document-icon.png" alt="method" class="ьуерщв-icon">
+                <img class="advantage-icon" src="assets/images/document-icon.png" alt="document" class="document-icon">
             </div>
 
             <div class="advantage-item">
                 <h5>Гарантії надійності державного банку</h5>
-                <img class="advantage-icon" src="assets/images/license-icon.png" alt="method" class="ьуерщв-icon">
+                <img class="advantage-icon" src="assets/images/license-icon.png" alt="license" class="license-icon">
             </div>
 
             <div class="advantage-item">
                 <h5>Співпраця з акредитованими партнерами дозволяє прискорити узгодження проекту</h5>
-                <img class="advantage-icon" src="assets/images/cooperation-icon.png" alt="method" class="ьуерщв-icon">
+                <img class="advantage-icon" src="assets/images/cooperation-icon.png" alt="cooperation" class="cooperation-icon">
             </div>
         </div>
 
@@ -299,13 +306,11 @@
 <section id="contacts">
     <div class="content-wrapper">
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2550.4663065802924!2d28.647044615724713!3d50.26455127945018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c64c235c01bad%3A0x717140ef650b3b45!2z0YPQuy4g0J_QvtCx0LXQtNGLLCDQltC40YLQvtC80LjRgCwg0JbQuNGC0L7QvNC40YDRgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1511211156004"
-                    width="800" height="900" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.033565968194!2d28.652113015724243!3d50.253957379448735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c6492fdb6f0f3%3A0x3b0dbd8cef024779!2z0LLRg9C70LjRhtGPINCa0LDRhNC10LTRgNCw0LvRjNC90LAsIDgsINCW0LjRgtC-0LzQuNGALCDQltC40YLQvtC80LjRgNGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1512596920436" width="800" height="900" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="contact-wrap">
             <div class="contacts">
                 <h4 class="header">НАШІ КОНТАКТИ:</h4>
-                <!--<p class="phone">+38 (0412) 937 99 92</p>-->
                 <a class="phone" href="tel:0638826948">+38 063 882 69 48</a>
                 <a class="phone" href="tel:0638826950">+38 063 882 69 50</a>
                 <a class="phone" href="tel:0638221079">+38 063 822 10 79</a>
@@ -316,6 +321,20 @@
     </div>
 </section>
 
+<section id="partners">
+    <div class="content-wrapper">
+        <h2>Наші партнери:</h2>
+        <p class="description">Компанія «Укренергохолдинг» підтримує партнерські зв’язки з іншими компаніями-учасниками енергетичного, будівельного та суміжних ринків. що є результатом дотримання фундаментальних засад партнерства та принципів етичної поведінки.</p>
+        <p class="description">Ми щиро вдячні за співпрацю та впевнені у подальших взаємовідносинах.</p>
+        <div class="partners-wrapper">
+            <a href="https://techinpro.com.ua/" target="_blank" class="partners-item">
+                <img class="partner-icon technipro" src="assets/images/techinpro_logo.png" alt="partner" class="technipro-icon">
+                <h5>«ТЕХНОІНВЕСТПРОЕКТ»</h5>
+                <p class="subheader">Новітній виробник будівельного матеріалу нового покоління, що впровадив власну енергозберігаючу технологію у будівельному виробництві. Ефективне технічне рішення, запропоноване компанією, є "ноу-хау" в сучасному будівництві, яке запатентоване і на сьогодні не має аналогів в Україні і у світі.</p>
+            </a>
+        </div>
+    </div>
+</section>
 
 <footer>
     <div class="content-wrapper">

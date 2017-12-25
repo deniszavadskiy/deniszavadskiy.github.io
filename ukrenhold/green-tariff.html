@@ -14,8 +14,9 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="assets/images/beidge.png"/>
     <link rel="stylesheet" href="styles/all.min.css">
-    <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.11.1.min.js" defer></script>
+    <script type="text/javascript" src="scripts/script.js" defer></script>
+    <script type="text/javascript" src="scripts/browser-detect.js" defer></script>
 </head>
 
 
@@ -55,6 +56,9 @@
                     <li>
                         <a href="index.html#contacts">Контакти</a>
                     </li>
+                    <li>
+                        <a href="index.html#partners">Партнери</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -89,19 +93,22 @@
                 <li>
                     <a href="index.html#contacts">Контакти</a>
                 </li>
+                <li>
+                    <a href="index.html#partners">Партнери</a>
+                </li>
             </ul>
         </nav>
     </div>
 </header>
 
 
-<section id="greenTariffPage">
+<section id="greenTariffPage" class="with-parallax">
     <div class="content-wrapper">
         <h2>Зелений тариф</h2>
     </div>
 </section>
 
-<section id="greenTariffPageContent">
+<section id="greenTariffPageContent" class="with-parallax">
     <div class="content-wrapper">
         <h2>Як працює зелений тариф на електроенергію?</h2>
         <p>Для продажу електроенегрії за зеленим тарифом, спочатку ви встановлюєте джерела альтернативної енергії,
