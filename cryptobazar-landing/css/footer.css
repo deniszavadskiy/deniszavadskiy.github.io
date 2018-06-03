@@ -1,0 +1,61 @@
+#footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 101vh;
+}
+#footer-section .map {
+  width: 50%;
+  overflow: hidden;
+}
+#footer-section .map iframe {
+  width: 100%;
+  height: 100%;
+}
+#footer-section .contact-wrap {
+  background: #292929;
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 6.9%;
+}
+#footer-section .contact-wrap .contacts .header {
+  font-weight: 600;
+  font-size: 1.78em;
+  color: #fff;
+  margin-bottom: 1.9em;
+}
+#footer-section .contact-wrap .contacts .phone {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.9em;
+}
+#footer-section .contact-wrap .contacts .address {
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 1.9em;
+  line-height: 1.5em;
+}
+#footer-section .contact-wrap .contacts .email {
+  font-weight: 300;
+  font-size: 1.12em;
+  color: #ff8562;
+  text-decoration: none;
+}
+#footer-section .contact-wrap .contacts .site {
+  font-size: 1.12em;
+  font-weight: 300;
+  margin-top: 2.52em;
+}

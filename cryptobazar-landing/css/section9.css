@@ -1,0 +1,111 @@
+#section9 {
+  font-family: Roboto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #e8e9eb;
+}
+#section9 .content-wrapper {
+  padding-top: 7em;
+  padding-bottom: 4em;
+}
+#section9 .content-wrapper h2 {
+  text-align: center;
+  font-size: 2.58em;
+}
+#section9 .content-wrapper .steps-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 7.2em;
+}
+#section9 .content-wrapper .steps-wrap .step {
+  position: relative;
+  padding: 1em 2.3em 9em 2.3em;
+  width: 23em;
+  background: #fff;
+  margin-bottom: 3em;
+}
+#section9 .content-wrapper .steps-wrap .step:before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-width: 1px;
+  border-color: #dcdddf;
+  background: #bdbdbd;
+  color: #fff;
+  top: -1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  font-size: 1.7em;
+}
+#section9 .content-wrapper .steps-wrap .step.step1:before {
+  content: "1";
+}
+#section9 .content-wrapper .steps-wrap .step.step2:before {
+  content: "2";
+}
+#section9 .content-wrapper .steps-wrap .step.step3:before {
+  content: "3";
+}
+#section9 .content-wrapper .steps-wrap .step.step4:before {
+  content: "4";
+}
+#section9 .content-wrapper .steps-wrap .step.step5:before {
+  content: "5";
+}
+#section9 .content-wrapper .steps-wrap .step.step6:before {
+  content: "6";
+}
+#section9 .content-wrapper .steps-wrap .step h5 {
+  color: #535e69;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+#section9 .content-wrapper .steps-wrap .step .subtitle {
+  text-align: center;
+  margin: 1.3em auto;
+  font-size: 1.4em;
+  line-height: 1.4;
+  color: #6793bd;
+}
+#section9 .content-wrapper .steps-wrap .step .description-list {
+  padding: 0 0.3em;
+  margin: 1.8em 0;
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+#section9 .content-wrapper .steps-wrap .step .description-list .description {
+  font-family: OpenSans;
+  margin-bottom: 1.6em;
+}
+#section9 .content-wrapper .steps-wrap .step .step-img {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  display: block;
+}

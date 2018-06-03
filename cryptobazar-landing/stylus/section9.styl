@@ -1,0 +1,103 @@
+@import colors
+
+
+#section9
+	font-family Roboto
+	display -webkit-box
+	display -ms-flexbox
+	display flex
+	-ms-flex-wrap nowrap
+	flex-wrap nowrap
+	-webkit-box-pack justify
+	-ms-flex-pack justify
+	justify-content space-between
+	background-color $color_brand_light_grey
+	.content-wrapper
+		padding-top 7em
+		padding-bottom 4em
+		h2
+			text-align center
+			font-size 2.58em
+		.steps-wrap
+			display -webkit-box
+			display -ms-flexbox
+			display flex
+			-ms-flex-pack distribute
+			justify-content space-around
+			-ms-flex-wrap wrap
+			flex-wrap wrap
+			margin-top 7.2em
+			.step
+				position relative
+				padding 1em 2.3em 9em 2.3em
+				width 23em
+				background $color_brand_white
+				margin-bottom 3em
+				&:before
+					content ""
+					position relative
+					width 50px
+					height 50px
+					border-width 1px
+					border-color #dcdddf
+					background #bdbdbd
+					color #fff
+					top -1.5em
+					display -webkit-box
+					display -ms-flexbox
+					display flex
+					-webkit-box-pack center
+					-ms-flex-pack center
+					justify-content center
+					-webkit-box-align center
+					-ms-flex-align center
+					align-items center
+					border-radius 50%
+					margin 0 auto
+					font-size 1.7em
+				&.step1
+					&:before
+						content "1"
+				&.step2
+					&:before
+						content "2"
+				&.step3
+					&:before
+						content "3"
+				&.step4
+					&:before
+						content "4"
+				&.step5
+					&:before
+						content "5"
+				&.step6
+					&:before
+						content "6"
+				h5
+					color $color_brand_grey
+					font-weight 400
+					font-size 1.5em
+					font-weight 400
+					text-align center
+				.subtitle
+					text-align center
+					margin 1.3em auto
+					font-size 1.4em
+					line-height 1.4
+					color $color_brand_blue
+				.description-list
+					padding 0 0.3em
+					margin 1.8em 0
+					font-size 1.3em
+					line-height 1.3
+					.description
+						font-family OpenSans
+						margin-bottom 1.6em
+				.step-img
+					position absolute
+					bottom 40px
+					left 50%
+					-webkit-transform translate(-50%)
+					-ms-transform translate(-50%)
+					transform translate(-50%)
+					display block

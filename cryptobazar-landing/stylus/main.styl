@@ -1,0 +1,203 @@
+@import colors
+
+*
+  -webkit-box-sizing border-box
+  box-sizing border-box
+
+html
+  position relative
+  min-height 100%
+
+body
+  font-size 16px
+  font-family Roboto
+  font-weight 400
+
+section
+  width 100%
+
+.content-wrapper
+  padding 1em 0.5em
+  width 96%
+  max-width 1200px
+  margin 0 auto
+
+a
+  color white
+
+h2
+  color $color_section_heading
+  font-weight 400
+  font-size 2.875em
+  .highlighted
+    font-weight 700
+
+h4
+  color $color_brand_blue
+  font-size 1.875em
+  font-weight 400
+  line-height 1.55
+
+.zoom-image
+  cursor: zoom-in
+
+.zoomer-wrapper
+  width 100%
+  height 100%
+  z-index 10
+  top: 0
+  background #fff
+  position fixed
+  display -webkit-box
+  display -ms-flexbox
+  display flex
+  visibility: hidden
+  opacity 0
+  -webkit-transition all 0.2s ease-in-out
+  -o-transition all 0.2s ease-in-out
+  transition all 0.2s ease-in-out
+  cursor zoom-out
+  .close-btn
+    position fixed
+    right 10px
+    top 12px
+    width 29px
+    height 32px
+    cursor pointer
+    [class^='line']
+      position absolute
+      left 15px
+      height 26px
+      width 2px
+      background-color #222
+    .line-first
+      -webkit-transform rotate(45deg)
+      -ms-transform rotate(45deg)
+      transform rotate(45deg)
+     .line-second
+       -webkit-transform rotate(-45deg)
+       -ms-transform rotate(-45deg)
+       transform rotate(-45deg)
+  #zoomerImage
+    margin auto
+    width 100%
+  &.active
+    visibility: visible
+    opacity 1
+.more-button
+  display block
+  font-size 24px
+  font-weight 300
+  padding 0.8em 0
+  border-radius 10px
+  width 300px
+  max-width 80%
+  margin 3em auto 1em
+  text-align center
+  -webkit-transition background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out
+  -o-transition background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out
+  transition background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out
+
+.under-layer
+  width 100%
+  height 100%
+  z-index 10
+  top: 0
+  background rgba(0,0,0,0.6)
+  position fixed
+  visibility: hidden
+  opacity 1
+  -webkit-transition all 0.2s ease-in-out
+  -o-transition all 0.2s ease-in-out
+  transition all 0.2s ease-in-out
+  .close-btn
+    position fixed
+    right 10px
+    top 12px
+    width 29px
+    height 32px
+    cursor pointer
+  &.active
+    visibility: visible
+    opacity 1
+    .mobile-right-menu
+      -webkit-transform translate(0,0)
+      -ms-transform translate(0,0)
+      transform translate(0,0)
+      opacity 1
+  .mobile-right-menu
+    background-color #111
+    color $color_brand_light_grey
+    width 300px
+    height 100vh
+    position fixed
+    right 0
+    opacity 0
+    -webkit-transform translate(300px,0)
+    -ms-transform translate(300px,0)
+    transform translate(300px,0)
+    padding 3em 2em
+    -webkit-transition 0.25s all 0.25s ease-in-out
+    -o-transition 0.25s all 0.25s ease-in-out
+    transition 0.25s all 0.25s ease-in-out
+    .logo
+      display block
+      width 7em
+      height 3em
+      background url("../media/images/cb-logo-white.png") center no-repeat
+      background-size contain
+      cursor pointer
+      margin-bottom 1.5em
+    .mobile-menu-list
+      li
+        color $color_brand_light_grey
+        font-size 24px
+        font-weight 300
+        font-family 'Roboto'
+        text-transform uppercase
+        margin-bottom 0.6em
+        line-height 1.2
+        a
+          color $color_brand_light_grey
+          -webkit-transition all 0.25s ease-in-out
+          -o-transition all 0.25s ease-in-out
+          transition all 0.25s ease-in-out
+          &:hover
+            color $color_brand_grey
+    .close-btn
+      position fixed
+      right 10px
+      top 12px
+      width 29px
+      height 32px
+      cursor pointer
+      [class^='line']
+        position absolute
+        left 15px
+        height 26px
+        width 2px
+        background-color $color_brand_light_grey
+      .line-first
+        -webkit-transform rotate(45deg)
+        -ms-transform rotate(45deg)
+        transform rotate(45deg)
+      .line-second
+        -webkit-transform rotate(-45deg)
+        -ms-transform rotate(-45deg)
+        transform rotate(-45deg)
+
+@import header
+@import section1
+@import section2
+@import section3
+@import section4
+@import section5
+@import section6
+@import section7
+@import section8
+@import section9
+@import section10
+@import section11
+@import section12
+@import footer
+@import adaptive
